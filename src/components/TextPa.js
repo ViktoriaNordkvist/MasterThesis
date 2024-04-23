@@ -31,7 +31,7 @@ const renderTime = ({ remainingTime }) => {
   return (
     <div className="time-wrapper">
       <div key={remainingTime} className={`time ${isTimeUp ? "up" : ""}`}>
-        {<p style={{color: 'white', fontSize: '50px', fontFamily: 'Arial, Helvetica, sans-serif'}}>{remainingTime}</p>}
+        {<p style={{color: 'white', fontSize: '50px', fontFamily: 'Arial, Helvetica, sans-serif', fontWeight: 600}}>{remainingTime}</p>}
       </div>
       {prevTime.current !== null && (
         <div
@@ -61,7 +61,7 @@ function TextPa({onComplete, stackSize, textVersion}) {
   const setCardText = () => {
     if(textVersion == 1) {
       setTitleText("Seatbelts on");
-      setBodyText("Please pu on your seatbelts");
+      setBodyText("Please put on your seatbelts");
       setNrOfSeconds(7);
       setCreationTime("30 min ago")
     }
@@ -90,7 +90,7 @@ function TextPa({onComplete, stackSize, textVersion}) {
                   <h1>{titleText}</h1>
                 </div>
                 <div className="TextPa-Divider"></div>
-                <p>{bodyText}</p>
+                <p style={{fontWeight: 400}}>{bodyText}</p>
                 <h3>1 / {stackSize}</h3>
             </div>
             <div className="TextPa-Timer">
