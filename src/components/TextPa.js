@@ -36,7 +36,7 @@ const renderTime = ({ remainingTime }) => {
       {prevTime.current !== null && (
         <div
           key={prevTime.current}
-          className={`time ${!isTimeUp ? "down" : ""}`}
+          
         >
           {<p style={{color: '#091326'}}>{prevTime.current}</p>}
         </div>
