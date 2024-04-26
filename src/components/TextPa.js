@@ -72,7 +72,7 @@ function TextPa({onComplete, stackSize, textVersion}) {
       setCreationTime("5 min ago")
     }
     else{
-      setTitleText("Safety information - Turbulance");
+      setTitleText("Safety information - Turbulence");
       setBodyText("We might experience turbulence ahead due to changing weather conditions, we are flying in" +
       " to a stormy area above the atlantic ocean. The pilots will be extra alert to help minimize the turbulence, "+
        "and passengers are adviced to buckle up to stay safe. ");
